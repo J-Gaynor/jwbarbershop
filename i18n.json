@@ -1,0 +1,11 @@
+{
+    "locales": ["gb", "jp"],
+    "defaultLocale": "jp",
+    "pages": {
+      "*": ["common"],
+      "/": ["home"],
+      "/info": ["info"],
+      "/services": ["services"],
+      "/staff": ["staff"]
+    }
+  }
