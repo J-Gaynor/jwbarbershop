@@ -1,17 +1,9 @@
 "use client";
 import { useState } from 'react';
-import { FormattedMessage } from 'react-intl';
 import Link from 'next/link';
 
-const Navbar = ({ language, setLanguage, setBgId }) => {
+const Navbar = ({ setBgId }) => {
     const [menuOpen, setMenuOpen] = useState(false); // State to toggle dropdown
-    let language2;
-    if (language === 'jp') {
-        language2 = 'gb';
-    } else {
-        language2 = 'jp';
-    }
-    console.log(language2)
 
     return (
         <nav className='flex w-full navbar bg-yellow-950 bg-opacity-60 isolate py-2'>
@@ -39,33 +31,33 @@ const Navbar = ({ language, setLanguage, setBgId }) => {
                     <li>
                         <button onClick={() => setBgId('info-bg')}>
                             <Link href='/info' className='navbar-text'>
-                                <FormattedMessage id='info' defaultMessage='Info'></FormattedMessage>
+                                Information
                             </Link>
                         </button>
                     </li>
                     <li>
                         <button onClick={() => setBgId('services-bg')}>
                             <Link href='/services' className='navbar-text'>
-                                <FormattedMessage id='services' defaultMessage='Services'></FormattedMessage>
+                                Services
                             </Link>
                         </button>
                     </li>
                     <li>
                         <button onClick={() => setBgId('staff-bg')}>
                             <Link href='/staff' className='navbar-text'>
-                                <FormattedMessage id='staff' defaultMessage='Staff'></FormattedMessage>
+                                Staff
                             </Link>
                         </button>
                     </li>
                     <li className='relative group'>
                         <button className='focus:outline-none navbar-text xl:pe-3'>
-                            <span className={`fi fi-${language}`}></span>
+                            <span className={`fi fi-gb`}></span>
                         </button>
                         <ul className='absolute hidden group-hover:block dropdown w-full'>
                             <li className='navbar-text mb-0'>
-                                <button onClick={() => setLanguage(language2)}>
-                                    <span className={`fi fi-${language2}`}></span>
-                                </button>
+                                <a href='/'>
+                                    <span className={`fi fi-jp`}></span>
+                                </a>
                             </li>
                         </ul>
                     </li>
@@ -77,28 +69,28 @@ const Navbar = ({ language, setLanguage, setBgId }) => {
                         <ul className='flex flex-col items-center'>
                             <li className='p-2 navbar-text '>
                                 <Link href='/info' onClick={() => setMenuOpen(false)}>
-                                    <FormattedMessage id='info' defaultMessage='Info'></FormattedMessage>
+                                    Information
                                 </Link>
                             </li>
                             <li className='p-2 navbar-text '>
                                 <Link href='/services' onClick={() => setMenuOpen(false)}>
-                                    <FormattedMessage id='services' defaultMessage='Services'></FormattedMessage>
+                                    Services
                                 </Link>
                             </li>
                             <li className='p-2 navbar-text '>
                                 <Link href='/staff' onClick={() => setMenuOpen(false)}>
-                                    <FormattedMessage id='staff' defaultMessage='Staff'></FormattedMessage>
+                                    Staff
                                 </Link>
                             </li>
                             <li className='p-2 relative group'>
                                 <button className='focus:outline-none navbar-text xl:pe-3'>
-                                    <span className={`fi fi-${language}`}></span>
+                                    <span className={`fi fi-en`}></span>
                                 </button>
                                 <ul className='absolute hidden group-hover:block dropdown w-full'>
                                     <li className='navbar-text mb-0'>
-                                        <button onClick={() => setLanguage(language2)}>
-                                            <span className={`fi fi-${language2}`}></span>
-                                        </button>
+                                        <a href='/'>
+                                            <span className={`fi fi-jp`}></span>
+                                        </a>
                                     </li>
                                 </ul>
                             </li>

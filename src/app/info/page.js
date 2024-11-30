@@ -1,8 +1,5 @@
 "use client";
-import { FormattedMessage } from 'react-intl';
-import Image from 'next/image';
 import Footer from '@/components/Footer';
-import Navbar from '@/components/Navbar';
 
 export default function Info() {
     return (
@@ -17,42 +14,44 @@ export default function Info() {
                         <ul>
                             <li>
                                 <b>
-                                    <FormattedMessage id='contact' defaultMessage='contact'></FormattedMessage>
+                                    Tel. & Fax:
                                 </b>
                             </li>
-                            <li>06-6252-7338</li>
+                            <li>
+                                06-6252-7338
+                            </li>
                             <li>
                                 <b>
-                                    <FormattedMessage id='location' defaultMessage='location'></FormattedMessage>
+                                    Location:
                                 </b>
                             </li>
                             <li>
                                 <a href='https://maps.app.goo.gl/xMQK3vHvQkRJB47F7' target='_blank'>
-                                    <FormattedMessage id='address' defaultMessage='address'></FormattedMessage>
+                                    Oe Building 1F, 1-6-18 Higashi-Shinsaibashi, Chuo Ward, Osaka City
                                 </a>
                             </li>
                             <br/>
                             <li>
                                 <b>
-                                    <FormattedMessage id='openingHours' defaultMessage='openingHours'></FormattedMessage>
+                                    Opening Hours:
                                 </b>
                             </li>
                             <ul>
                                 <li>
-                                    <FormattedMessage id='weekdays' defaultMessage='weekdays'></FormattedMessage>
+                                    Weekdays: 10:00-20:00
                                 </li>
                                 <li>
-                                    <FormattedMessage id='weekends' defaultMessage='weekends'></FormattedMessage>
+                                    Weekends & Holidays: 09:00-19:00
                                 </li>
                             </ul>
                             <li>
                                 <b>
-                                    <FormattedMessage id='closed' defaultMessage='closed'></FormattedMessage>
+                                    Closed:
                                 </b>
                             </li>
                             <ul>
                                 <li>
-                                    <FormattedMessage id='closedDays' defaultMessage='closedDays'></FormattedMessage>
+                                    Monday
                                 </li>
                             </ul>
                         </ul>

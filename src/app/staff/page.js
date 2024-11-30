@@ -1,7 +1,6 @@
 "use client";
 import Image from 'next/image';
 import Footer from '@/components/Footer';
-import { FormattedMessage } from 'react-intl';
 
 export default function Info() {
     return (
@@ -20,17 +19,17 @@ export default function Info() {
                         />
                         <div className='text-center lg:my-auto'>
                             <b>
-                                <FormattedMessage id='manager' defaultMessage='manager'></FormattedMessage>
+                                Shop Manager
                             </b>
                             <br/>
                             <b>
-                                <FormattedMessage id='managerName' defaultMessage='managerName'></FormattedMessage>
+                                Hiro Moritaka
                             </b>
                             <p>
-                                <FormattedMessage id='managerFrom' defaultMessage='managerFrom'></FormattedMessage>
+                                📍 Nara
                             </p>
                             <p>
-                                <FormattedMessage id='managerQuote' defaultMessage='managerQuote'></FormattedMessage>
+                                'Welcoming customers with the best smile, and making them smile with the best haircut.'
                             </p>
                         </div>    
                         <Image 
@@ -41,15 +40,15 @@ export default function Info() {
                         />
                         <div className='text-center my-auto'>
                             <b>
-                                <FormattedMessage id='stylist' defaultMessage='stylist'></FormattedMessage>
+                                Stylist
                             </b>
                             <br/>
                             <b>
-                                <FormattedMessage id='stylistName' defaultMessage='stylistName'></FormattedMessage>
+                                Naoto Shirakawa
                             </b>
                             <br/>
                             <p>
-                                <FormattedMessage id='stylistLocation' defaultMessage='stylistLocation'></FormattedMessage>
+                                📍 Hyogo
                             </p>
                         </div>
                     </div>

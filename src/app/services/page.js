@@ -1,7 +1,5 @@
 "use client";
-import Image from 'next/image';
 import Footer from '@/components/Footer';
-import { FormattedMessage } from 'react-intl';
 
 export default function Info() {
     return (
@@ -16,88 +14,88 @@ export default function Info() {
                             <tbody>
                                 <tr>
                                     <td className='text-start'>
-                                        <FormattedMessage id='standard' defaultMessage='standard'></FormattedMessage>
+                                        Standard (Cut, Shave & Shampoo)
                                     </td>
                                     <td className='text-end'>¥6000</td>
                                 </tr>
                                 <tr>
                                     <td className='text-start'>
-                                        <FormattedMessage id='cutShave' defaultMessage='cutShave'></FormattedMessage>
+                                        Cut & Shave
                                     </td>
                                     <td className='text-end'>¥5000</td>
                                 </tr>
                                 <tr>
                                     <td className='text-start'>
-                                        <FormattedMessage id='cutShampoo' defaultMessage='cutShampoo'></FormattedMessage>
+                                        Cut & Shampoo
                                     </td>
                                     <td className='text-end'>¥4500</td>
                                 </tr>
                                 <tr>
                                     <td className='text-start'>
-                                        <FormattedMessage id='cut' defaultMessage='cut'></FormattedMessage>
+                                        Cut Only
                                     </td>
                                     <td className='text-end'>¥4000</td>
                                 </tr>
                                 <tr className='h-4'></tr>
                                 <tr>
                                     <td className='text-start'>
-                                        <FormattedMessage id='perm' defaultMessage='perm'></FormattedMessage>
+                                        Perm (Cut & Shave Included)
                                     </td>
                                     <td className='text-end'>¥10000</td>
                                 </tr>
                                 <tr>
                                     <td className='text-start'>
-                                        <FormattedMessage id='colouring' defaultMessage='colouring'></FormattedMessage>
+                                        Colouring (Cut & Shampoo Included)
                                     </td>
                                     <td className='text-end'>¥9000</td>
                                 </tr>
                                 <tr className='h-4'></tr>
                                 <tr>
                                     <td className='text-start'>
-                                        <FormattedMessage id='shampoo' defaultMessage='shampoo'></FormattedMessage>
+                                        Shampoo Set
                                     </td>
                                     <td className='text-end'>¥2500</td>
                                 </tr>
                                 <tr>
                                     <td className='text-start'>
-                                        <FormattedMessage id='shave' defaultMessage='shave'></FormattedMessage>
+                                        Shave Only
                                     </td>
                                     <td className='text-end'>¥2500</td>
                                 </tr>
                                 <tr>
                                     <td className='text-start'>
-                                        <FormattedMessage id='shaveShampoo' defaultMessage='shaveShampoo'></FormattedMessage>
+                                        Shave & Shampoo
                                     </td>
                                     <td className='text-end'>¥3500</td>
                                 </tr>
                                 <tr>
                                     <td className='text-start'>
-                                        <FormattedMessage id='ladiesShave' defaultMessage='ladiesShave'></FormattedMessage>
+                                        Ladies' Shave
                                     </td>
                                     <td className='text-end'>¥3500</td>
                                 </tr>
                                 <tr className='h-4'></tr>
                                 <tr>
                                     <td className='text-start'>
-                                        <FormattedMessage id='grey' defaultMessage='grey'></FormattedMessage>
+                                        Anti-Grey
                                     </td>
                                     <td className='text-end'>¥2000</td>
                                 </tr>
                                 <tr>
                                     <td className='text-start'>
-                                        <FormattedMessage id='headSpa' defaultMessage='headSpa'></FormattedMessage>
+                                        Head Spa
                                     </td>
                                     <td className='text-end'>¥2000</td>
                                 </tr>
                                 <tr>
                                     <td className='text-start'>
-                                        <FormattedMessage id='faceMassage' defaultMessage='faceMassage'></FormattedMessage>
+                                        Face Massage
                                     </td>
                                     <td className='text-end'>¥1500</td>
                                 </tr>
                                 <tr>
                                     <td className='text-start'>
-                                        <FormattedMessage id='noseWax' defaultMessage='noseWax'></FormattedMessage>
+                                        Nose Wax
                                     </td>
                                     <td className='text-end'>¥500</td>
                                 </tr>

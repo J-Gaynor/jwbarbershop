@@ -1,11 +1,9 @@
 "use client";
 import { useState, useEffect } from "react";
-import { IntlProvider } from "react-intl";
 import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from '../components/Navbar.js';
-import enMessages from '../../locales/en/en.json';
-import jaMessages from '../../locales/ja/ja.json';
+import { Provider } from 'react-intl/src/components/injectIntl';
 
 
 const geistSans = localFont({
@@ -19,13 +17,7 @@ const geistMono = localFont({
     weight: "100 900",
 });
 
-const messages = {
-    gb: enMessages,
-    jp: jaMessages,
-};
-
 export default function Layout({ children }) {
-    const [language, setLanguage] = useState('jp');
     const [bgId, setBgId] = useState('default-bg');
 
     useEffect(() => {
@@ -48,7 +40,7 @@ export default function Layout({ children }) {
     }, []);
 
     return (
-        <html lang={language}>
+        <html>
             <head>
                 <link rel="preconnect" href="https://fonts.googleapis.com" />
                 <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
@@ -57,14 +49,14 @@ export default function Layout({ children }) {
                 <link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap" rel="stylesheet"/>
             </head>
             <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-                <IntlProvider locale={language} messages={messages[language]}>
+                <Provider>
                     <div className='img-bg mb-5' id={bgId}>
                         <div className='grid mx-auto sticky top-0 z-50 '>
-                            <Navbar language={language} setLanguage={setLanguage} setBgId={setBgId}/>
+                            <Navbar setBgId={setBgId}/>
                         </div>
                     </div>
                     {children}
-                </IntlProvider>
+                </Provider>
             </body>
         </html>
     );
