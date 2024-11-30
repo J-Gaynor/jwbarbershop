@@ -9,7 +9,9 @@ export default function Info() {
             <main className="">
                 <div className='grid md:grid-cols-2 w-10/12 justify-between mx-auto'>
                     <div className='flex'>
-                        <h2 className='mx-auto content-center text-center page-title'>What we offer</h2>
+                        <h2 className='mx-auto content-center text-center page-title'>
+                            <FormattedMessage id='menu' defaultMessage='menu'></FormattedMessage>
+                        </h2>
                     </div>
                     <div className='w-full my-10 text-end'>
                         <table className='mx-auto'>
