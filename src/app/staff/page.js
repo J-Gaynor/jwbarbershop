@@ -12,7 +12,7 @@ export default function Info() {
                     </div>
                     <div className='grid lg:grid-cols-2 xl:grid-rows-2 gap-5 my-10 justify-center'>
                         <Image 
-                            src="/images/jw-hiro.jpeg"
+                            src="/en/images/jw-hiro.jpeg"
                             alt="Shop" 
                             width={1280}
                             height={480}
@@ -33,7 +33,7 @@ export default function Info() {
                             </p>
                         </div>    
                         <Image 
-                            src="/images/jw-naoto.jpeg"
+                            src="/en/images/jw-naoto.jpeg"
                             alt="Shop" 
                             width={1280}
                             height={480}
