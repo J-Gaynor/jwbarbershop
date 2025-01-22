@@ -1,6 +1,6 @@
 ## This project is built with NextJS and Tailwind. 
-- View the live demo here: https://jw-barbershop.netlify.app
-- Live implementation: coming soon
+- [Demo here](https://jw-barbershop.netlify.app)
+- [Live implementation](http://jw-bb.com/en/)
 
 ## Tech Stack
 - Next.js: Framework for building React applications.
