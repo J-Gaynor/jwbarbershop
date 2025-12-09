@@ -1,5 +1,4 @@
 "use client";
-import Image from 'next/image';
 import Footer from '@/components/Footer';
 import { FormattedMessage } from 'react-intl';
 
@@ -108,7 +107,7 @@ export default function Info() {
                     </div>
                 </div>
             </main>
-            <Footer/>
+            <Footer />
         </div>
     );
 }
