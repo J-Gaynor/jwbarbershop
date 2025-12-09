@@ -16,19 +16,19 @@ export default function Info() {
                                     <td className='text-start'>
                                         Standard (Cut, Shave & Shampoo)
                                     </td>
-                                    <td className='text-end'>¥6000</td>
+                                    <td className='text-end'>¥6500</td>
                                 </tr>
                                 <tr>
                                     <td className='text-start'>
                                         Cut & Shave
                                     </td>
-                                    <td className='text-end'>¥5000</td>
+                                    <td className='text-end'>¥5500</td>
                                 </tr>
                                 <tr>
                                     <td className='text-start'>
                                         Cut & Shampoo
                                     </td>
-                                    <td className='text-end'>¥4500</td>
+                                    <td className='text-end'>¥5000</td>
                                 </tr>
                                 <tr>
                                     <td className='text-start'>
@@ -41,7 +41,7 @@ export default function Info() {
                                     <td className='text-start'>
                                         Perm (Cut & Shave Included)
                                     </td>
-                                    <td className='text-end'>¥10000</td>
+                                    <td className='text-end'>¥11000</td>
                                 </tr>
                                 <tr>
                                     <td className='text-start'>

@@ -6,14 +6,14 @@ const Footer = () => {
             <div className='flex gap-6 justify-center'>
                 <a href="https://www.facebook.com/johnwayne.barber.7" target="_blank">
                     <Image
-                        src='/images/fb.png'
+                        src='/en/images/fb.png'
                         width={32}
                         height={32}
                     />
                 </a>
                 <a href="https://www.instagram.com/barber_john_wayne" target="_blank" rel="noopener noreferrer">
                     <Image
-                        src='/images/ig.png'
+                        src='/en/images/ig.png'
                         width={32}
                         height={32}
                         alt="Instagram"
